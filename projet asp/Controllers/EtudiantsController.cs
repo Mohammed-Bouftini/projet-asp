@@ -57,6 +57,12 @@ namespace projet_asp.Controllers
                 .ExecuteSqlCommand("Update Etudiants set Validé='1' where Id=@id", new SqlParameter("@id", id));
             return RedirectToAction("No_Validé", "Etudiants");
         }
+        public ActionResult NoDetail(int? id)
+        {
+            int test = db.Database
+                .ExecuteSqlCommand("Update Etudiants set Validé='0' where Id=@id", new SqlParameter("@id", id));
+            return RedirectToAction("Validé", "Etudiants");
+        }
 
         // GET: Etudiants/Create
         public ActionResult Create()
