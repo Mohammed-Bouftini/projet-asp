@@ -52,7 +52,8 @@ namespace projet_asp.Controllers
             {
                 if (item.Email == log.Email && item.MotDePasse == log.Password)//&& item.Isresp == true
                 {
-                   // Session["pass"] = item.Id;
+                    FormsAuthentication.SetAuthCookie(log.Email, false);
+                    // Session["pass"] = item.Id;
                     return RedirectToAction("Index", "Admins");
                 }
                 a = true;
