@@ -275,6 +275,8 @@
     <Content Include="Views\Etudiants\ValidationCompte.cshtml" />
     <Content Include="Views\Etudiants\Validé.cshtml" />
     <Content Include="Views\Etudiants\Index_No_Validé.cshtml" />
+    <Content Include="Views\Etudiants\Profil.cshtml" />
+    <Content Include="Views\Etudiants\EditProfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

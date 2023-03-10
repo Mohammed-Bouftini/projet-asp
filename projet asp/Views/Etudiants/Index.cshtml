@@ -5,7 +5,7 @@
 }
 
 <body style="background-image: url(../../Assets/pexels-buro-millennial-1438072.jpg); background-size: 100%; position: absolute; bottom: 40px; left: 25%; overflow: hidden; }">
-    <div style="color: white; font-size: 50px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -80px; text-align: center; width: 80%; margin-left: -15px; ">Welcome</div>
+    <div style="color: white; font-size: 50px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -80px; text-align: center; width: 80%; margin-left: -15px; ">Bienvenu</div>
     <div class="jumbotron" style="background-color: transparent;">
         <br />
         <br />
@@ -17,5 +17,16 @@
                 @Html.ActionLink("Nouveaus Etudiant", "No_Validé", "Etudiants", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
             </a>
         </p>
+        @foreach (var item in Model)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                if (User.Identity.Name == item.Email)
+                {
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                }
+
+            }
+        }
     </div>
 </body>

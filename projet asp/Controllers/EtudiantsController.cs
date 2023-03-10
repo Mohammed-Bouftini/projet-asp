@@ -37,6 +37,19 @@ namespace projet_asp.Controllers
         {
             return View();
         }
+        public ActionResult Profil(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Etudiant etudiant = db.Etudiants.Find(id);
+            if (etudiant == null)
+            {
+                return HttpNotFound();
+            }
+            return View(etudiant);
+        }
         // GET: Etudiants/Details/5
         public ActionResult Details(int? id)
         {
@@ -84,6 +97,19 @@ namespace projet_asp.Controllers
                 return RedirectToAction("ValidationCompte");
             }
 
+            return View(etudiant);
+        }
+        public ActionResult EditProfil(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Etudiant etudiant = db.Etudiants.Find(id);
+            if (etudiant == null)
+            {
+                return HttpNotFound();
+            }
             return View(etudiant);
         }
 
