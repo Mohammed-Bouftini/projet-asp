@@ -5,16 +5,13 @@
 }
 
 <body style="background-image: url(../../Assets/pexels-buro-millennial-1438072.jpg); background-size: 100%; position: absolute; bottom: 40px; left: 25%; overflow: hidden; }">
-    <div style="color: white; font-size: 50px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -80px; text-align: center; width: 80%; margin-left: -15px; ">Bienvenu</div>
+    <div style="color: white; font-size: 50px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -200px; text-align: center; width: 80%; margin-left: -15px; ">Bienvenu</div>
     <div class="jumbotron" style="background-color: transparent;">
         <br />
         <br />
-        <p>
+        <p >
             <a style="background-color: aqua;">
-                @Html.ActionLink("Etudiants Validés", "Validé", "Etudiants", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
-            </a>
-            <a>
-                @Html.ActionLink("Nouveaus Etudiant", "No_Validé", "Etudiants", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
+                @Html.ActionLink("Les Notes","NoteEtudiant","Notes", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
             </a>
         </p>
         @foreach (var item in Model)
@@ -23,7 +20,7 @@
             {
                 if (User.Identity.Name == item.Email)
                 {
-                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                    @Html.ActionLink("Profil", "Details", new { id = item.Id })
                 }
 
             }

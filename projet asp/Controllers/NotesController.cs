@@ -21,6 +21,11 @@ namespace projet_asp.Controllers
             var notes = db.Notes.Include(n => n.Etudiant).Include(n => n.Matiere);
             return View(notes.ToList());
         }
+        public ActionResult NoteEtudiant()
+        {
+            var notes = db.Notes.Include(n => n.Etudiant).Include(n => n.Matiere);
+            return View(notes.ToList());
+        }
 
         // GET: Notes/Details/5
         public ActionResult Details(int? id)

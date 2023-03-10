@@ -1,0 +1,46 @@
+﻿@model IEnumerable<projet_asp.Models.Note>
+@{
+    ViewBag.Title = "NoteEtudiant";
+}
+<h2>Les Notes</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Etudiant.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Matiere.matiere)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.moyenne)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (User.Identity.IsAuthenticated)
+        {
+            if (User.Identity.Name == item.Etudiant.Email)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Etudiant.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Matiere.matiere)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.moyenne)
+            </td>
+        </tr>
+        }
+        }
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to List", "Index", "Etudiants", null, new { @class = "btn btn-default" })
+</div>
+
+
