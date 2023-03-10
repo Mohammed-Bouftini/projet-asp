@@ -170,6 +170,8 @@
     <Content Include="Assets\img\post-sample-image.jpg" />
     <Content Include="Assets\pexels-andrea-piacquadio-3760067.jpg" />
     <Content Include="Assets\pexels-buro-millennial-1438072.jpg" />
+    <Content Include="Assets\pexels-karolina-grabowska-7681200.jpg" />
+    <Content Include="Assets\pexels-karolina-grabowska-7681419.jpg" />
     <Content Include="Assets\pexels-pixabay-159740.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -272,6 +274,7 @@
     <Content Include="Views\Etudiants\No_Validé.cshtml" />
     <Content Include="Views\Etudiants\ValidationCompte.cshtml" />
     <Content Include="Views\Etudiants\Validé.cshtml" />
+    <Content Include="Views\Etudiants\Index_No_Validé.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

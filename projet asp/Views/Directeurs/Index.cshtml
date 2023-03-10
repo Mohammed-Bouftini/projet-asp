@@ -34,9 +34,9 @@
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 
-<body style="background-image: url(../../Assets/253332.jpg); background-size: 100%; position: absolute; bottom: 40px; left: 25%; overflow: hidden; }">
-    <div style="color: white; font-size: 50px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -70px; text-align: center; width: 70%; margin-left: -10px; ">Espace Directeur</div>
-    <div class="jumbotron" style="background-color: transparent;">
+<body style="background-image: url(../../Assets/253332.jpg); background-size: 100%; position: absolute; bottom: 40px; left: 45%; overflow: hidden; }">
+    <div style="color: white; font-size: 60px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -400px; text-align: center; width: 70%; margin-left: -10px; ">Espace Directeur</div>
+   @* <div class="jumbotron" style="background-color: transparent;">
         <br />
         <br />
         <p>
@@ -47,7 +47,7 @@
                 @Html.ActionLink("Liste Enseignant", "ListeCompte", "Enseignants", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
             </a>
         </p>
-    </div>
+    </div>*@
 
     <div class="sidebar">
         <style>
@@ -87,23 +87,37 @@
         </style>
 
         <div class="row">
-            <p class="fas fa-user-tie" style="font-size: 30px;">
+            <p class="fas fa-user-tie" style="font-size: 25px;">
                 <a>
                     @Html.ActionLink("Create Enseignant", "Create", "Enseignants", null, new { @class = "btn btn-default ", @style = "background-color: lightgoldenrodyellow; font-size: 25px;" })
                 </a>
             </p>
         </div>
         <div class="row">
+            <p class="fas fa-list-ul" style="font-size: 20px;">
+                <a>
+                    @Html.ActionLink("Liste Enseignant", "ListeCompte", "Enseignants", null, new { @class = "btn btn-default ", @style = "background-color: lightgoldenrodyellow; font-size: 25px;" })
+                </a>
+            </p>
+        </div>
+        <div class="row">
 
-            <p class="fas fa-user-lock" style="font-size: 24px;">
+            <p class="fas fa-user-tie" style="font-size: 25px;">
                 <a>
                     @Html.ActionLink("Create Administratif", "Create", "Admins", null, new { @class = "btn btn-default", @style = "background-color: lightgoldenrodyellow; font-size: 25px;" })
                 </a>
             </p>
         </div>
         <div class="row">
+            <p class="fas fa-list-ul" style="font-size: 20px;">
+                <a>
+                    @Html.ActionLink("Liste Administratif", "ListeCompte", "Admins", null, new { @class = "btn btn-default ", @style = "background-color: lightgoldenrodyellow; font-size: 25px;" })
+                </a>
+            </p>
+        </div>
+        <div class="row">
 
-            <p class="fas fa-warehouse" style="font-size: 24px;">
+            <p class="fas fa-book" style="font-size: 25px;">
                 <a>
                     @Html.ActionLink("Ajouter Matière", "Create", "Matière", null, new { @class = "btn btn-default", @style = "background-color: lightgoldenrodyellow; font-size: 25px;" })
                 </a>

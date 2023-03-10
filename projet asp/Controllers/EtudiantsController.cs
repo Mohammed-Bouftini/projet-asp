@@ -25,6 +25,10 @@ namespace projet_asp.Controllers
         {
             return View(db.Etudiants.ToList());
         }
+        public ActionResult Index_No_Validé()
+        {
+            return View(db.Etudiants.ToList());
+        }
         public ActionResult Validé()
         {
             return View(db.Etudiants.ToList());

@@ -42,7 +42,8 @@ namespace projet_asp.Controllers
             {
                 if (item.Email == log.Email && item.MotDePasse == log.Password)
                 {
-                  //  Session["pass"] = item.Id;
+                    FormsAuthentication.SetAuthCookie(log.Email, false);
+                    //  Session["pass"] = item.Id;
                     return RedirectToAction("Index", "Enseignants");
                 }
                 a = true;
@@ -63,14 +64,16 @@ namespace projet_asp.Controllers
             {
                 if (item.Email == log.Email && item.MotDePasse == log.Password && item.Validé == true)
                 {
-                   // Session["pass"] = item.Id;
+                    FormsAuthentication.SetAuthCookie(log.Email, false);
+                    // Session["pass"] = item.Id;
                     return RedirectToAction("Index", "Etudiants");
                 }
                 else if (item.Email == log.Email && item.MotDePasse == log.Password && item.Validé == false)
                 {
-                    /*return RedirectToAction("ValidationCompte", "Etudiants");*/
-                    ViewBag.message = "Votre Compte n'est pas encore Validé";
-                    return View();
+                    FormsAuthentication.SetAuthCookie(log.Email, false);
+                    return RedirectToAction("Index_No_Validé", "Etudiants");
+                    /*ViewBag.message = "Votre Compte n'est pas encore Validé";
+                    return View();*/
                 }
                     a = true;
             }
@@ -78,6 +81,7 @@ namespace projet_asp.Controllers
             {
                 if (item.Email == log.Email && item.MotDePasse == log.Password)
                 {
+                    FormsAuthentication.SetAuthCookie(log.Email, false);
                     return RedirectToAction("Index", "Directeurs");
                 }
                 a = true;
