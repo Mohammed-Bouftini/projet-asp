@@ -1,0 +1,32 @@
+﻿@model IEnumerable<projet_asp.Models.Enseignant>
+
+@{
+    ViewBag.Title = "Index";
+}
+@*@if (User.Identity.IsAuthenticated)
+{
+    <li><a>Welcoe @User.Identity.Name</a></li>
+}*@
+
+@*<p>
+    @Html.ActionLink("Ajouter Notes", "Create", "Notes")
+</p>
+<p>
+    @Html.ActionLink("Liste Notes", "Index", "Notes")
+</p>*@
+
+<body style="background-image: url(../../Assets/pexels-fauxels-3184418.jpg); background-size: 100%; position: absolute; bottom: 40px; left: 25%; overflow: hidden; }">
+    <div style="color: white; font-size: 40px; font-family: 'Times New Roman'; font-weight: bolder; position: absolute; top: -70px; text-align: center; width: 70%; margin-left: -10px; ">Espace Enseignant</div>
+    <div class="jumbotron" style="background-color: transparent;">
+        <br />
+        <br />
+        <p>
+            <a style="background-color: aqua;">
+                @Html.ActionLink("Ajouter Notes", "Create", "Notes", null, new { @class = "btn btn-primary btn-lg", @style = "background-color: transparent; font-size: 35px;" })
+            </a>
+            <a>
+                @Html.ActionLink("Liste Notes", "Index", "Notes", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
+            </a>
+        </p>
+        </div>
+</body>
