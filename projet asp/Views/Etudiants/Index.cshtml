@@ -9,7 +9,7 @@
     <div class="jumbotron" style="background-color: transparent;">
         <br />
         <br />
-        <p >
+        <p>
             <a style="background-color: aqua;">
                 @Html.ActionLink("Les Notes","NoteEtudiant","Notes", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
             </a>
@@ -20,7 +20,7 @@
             {
                 if (User.Identity.Name == item.Email)
                 {
-                    @Html.ActionLink("Profil", "Details", new { id = item.Id })
+                     @Html.ActionLink("Profil", "Details", new { id = item.Id }, new { @class = "btn btn-primary", style = "position: absolute; top: 50px; left: 50px;margin-left: -15px;" })
                 }
 
             }

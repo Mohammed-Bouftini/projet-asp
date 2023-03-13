@@ -23,7 +23,7 @@
         {
         if (User.Identity.Name==item.Email) 
             { 
-                @Html.ActionLink("Profil", "Profil", new { id = item.Id })
+                @Html.ActionLink("Profil", "Profil", new { id = item.Id }, new { @class = "btn btn-primary", style = "position: absolute; top: 50px; left: 50px;margin-left: -15px;" })
             }
             
         }
