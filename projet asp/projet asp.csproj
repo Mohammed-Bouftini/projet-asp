@@ -141,9 +141,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303081215552_Update.cs" />
-    <Compile Include="Migrations\202303081215552_Update.designer.cs">
-      <DependentUpon>202303081215552_Update.cs</DependentUpon>
+    <Compile Include="Migrations\202303141131219_Update.cs" />
+    <Compile Include="Migrations\202303141131219_Update.designer.cs">
+      <DependentUpon>202303141131219_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303141225458_Update1.cs" />
+    <Compile Include="Migrations\202303141225458_Update1.designer.cs">
+      <DependentUpon>202303141225458_Update1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
@@ -153,6 +157,7 @@
     <Compile Include="Models\Etudiant.cs" />
     <Compile Include="Models\Matière.cs" />
     <Compile Include="Models\Note.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -266,7 +271,6 @@
     <Content Include="Views\Directeurs\Edit.cshtml" />
     <Content Include="Views\Directeurs\Delete.cshtml" />
     <Content Include="Views\Directeurs\ListeCompte.cshtml" />
-    <Content Include="Views\Etudiants\Create.cshtml" />
     <Content Include="Views\Etudiants\Delete.cshtml" />
     <Content Include="Views\Etudiants\Details.cshtml" />
     <Content Include="Views\Etudiants\Edit.cshtml" />
@@ -278,6 +282,7 @@
     <Content Include="Views\Etudiants\Profil.cshtml" />
     <Content Include="Views\Etudiants\EditProfil.cshtml" />
     <Content Include="Views\Notes\NoteEtudiant.cshtml" />
+    <Content Include="Views\Etudiants\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -293,8 +298,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202303081215552_Update.resx">
-      <DependentUpon>202303081215552_Update.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303141131219_Update.resx">
+      <DependentUpon>202303141131219_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303141225458_Update1.resx">
+      <DependentUpon>202303141225458_Update1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

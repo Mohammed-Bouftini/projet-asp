@@ -77,13 +77,13 @@
                         Tel = c.String(nullable: false, maxLength: 10),
                         Email = c.String(nullable: false),
                         MotDePasse = c.String(nullable: false),
+                        SectionId = c.Int(nullable: false),
                         Role = c.String(),
                         Validé = c.Boolean(nullable: false),
-                        Section_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Sections", t => t.Section_Id)
-                .Index(t => t.Section_Id);
+                .ForeignKey("dbo.Sections", t => t.SectionId, cascadeDelete: true)
+                .Index(t => t.SectionId);
             
             CreateTable(
                 "dbo.Notes",
@@ -125,7 +125,7 @@
         
         public override void Down()
         {
-            DropForeignKey("dbo.Etudiants", "Section_Id", "dbo.Sections");
+            DropForeignKey("dbo.Etudiants", "SectionId", "dbo.Sections");
             DropForeignKey("dbo.Enseignants", "Section_Id", "dbo.Sections");
             DropForeignKey("dbo.Notes", "MatiereId", "dbo.Matière");
             DropForeignKey("dbo.Matière", "EnseignantId", "dbo.Enseignants");
@@ -135,7 +135,7 @@
             DropIndex("dbo.Matière", new[] { "EnseignantId" });
             DropIndex("dbo.Notes", new[] { "EtudiantId" });
             DropIndex("dbo.Notes", new[] { "MatiereId" });
-            DropIndex("dbo.Etudiants", new[] { "Section_Id" });
+            DropIndex("dbo.Etudiants", new[] { "SectionId" });
             DropIndex("dbo.Enseignants", new[] { "Section_Id" });
             DropIndex("dbo.Enseignants", new[] { "Directeur_Id" });
             DropIndex("dbo.Admins", new[] { "Directeur_Id" });
