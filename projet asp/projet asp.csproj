@@ -157,7 +157,6 @@
     <Compile Include="Models\Etudiant.cs" />
     <Compile Include="Models\Matière.cs" />
     <Compile Include="Models\Note.cs" />
-    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -304,6 +303,9 @@
     <EmbeddedResource Include="Migrations\202303141225458_Update1.resx">
       <DependentUpon>202303141225458_Update1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Account\ResourceAccount.ar.resx" />
+    <EmbeddedResource Include="Resources\ModelsResources\Account\ResourceAccount.en.resx" />
+    <EmbeddedResource Include="Resources\ModelsResources\Account\ResourceAccount.fr.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
