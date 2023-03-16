@@ -1,5 +1,12 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<body style="background-image: url(../../Assets/3.png); background-size: 100%; position: absolute; bottom: 40px; left: 25%; overflow: hidden; }"></body>
-  
+<body style="background-image: url(../../Assets/3.png); background-size: 100%; position: absolute; bottom: 40px; left: 25%; overflow: hidden; }">
+    @Html.ActionLink("Francais", "CultureFr") |
+
+
+    @Html.ActionLink("English", "CultureEn")  |
+
+
+    @Html.ActionLink("العربية", "CultureAR")
+</body>

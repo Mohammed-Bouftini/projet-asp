@@ -26,5 +26,21 @@ namespace projet_asp.Controllers
 
             return View();
         }
+        public ActionResult CultureFr()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("fr-FR");
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult CultureEn()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("en-US");
+            return RedirectToAction("Index");
+        }
+        public ActionResult CultureAr()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("ar-MA");
+            return RedirectToAction("Index");
+        }
     }
 }

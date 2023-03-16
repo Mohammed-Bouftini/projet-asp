@@ -117,16 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="email" xml:space="preserve">
-    <value>Adresse e-mail</value>
-  </data>
-  <data name="emailEr" xml:space="preserve">
-    <value>L'adresse e-mail est obligatoire !</value>
-  </data>
-  <data name="pwd" xml:space="preserve">
-    <value>Mot de passe</value>
-  </data>
-  <data name="pwdEr" xml:space="preserve">
-    <value>Mot de passe obligatoire !</value>
+  <data name="bnj" xml:space="preserve">
+    <value>Bienvenu</value>
   </data>
 </root>

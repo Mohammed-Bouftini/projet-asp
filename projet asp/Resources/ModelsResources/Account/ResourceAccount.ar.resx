@@ -120,13 +120,22 @@
   <data name="email" xml:space="preserve">
     <value>البريد الإلكتروني</value>
   </data>
+  <data name="email-pwd" xml:space="preserve">
+    <value>بريدك الإلكتروني او كلمة المرور ليست صحيحة</value>
+  </data>
   <data name="emailEr" xml:space="preserve">
-    <value>مطلوب عنوان البريد الإلكتروني!</value>
+    <value>البريد الإلكتروني مطلوب</value>
+  </data>
+  <data name="emailErr" xml:space="preserve">
+    <value>البريد الإلكتروني غير صالح</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
   </data>
   <data name="pwd" xml:space="preserve">
-    <value>كلمة السر</value>
+    <value>كلمة المرور</value>
   </data>
   <data name="pwdEr" xml:space="preserve">
-    <value>كلمة المرور مطلوبة!</value>
+    <value>كلمة المرور مطلوبة</value>
   </data>
 </root>

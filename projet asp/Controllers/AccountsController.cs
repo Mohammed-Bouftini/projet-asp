@@ -88,7 +88,7 @@ namespace projet_asp.Controllers
             }
             if (a == true)
             {
-                ViewBag.message = "votre Email ou Mot de passe est incorrecte";
+                ViewBag.message = Resources.ModelsResources.Account.ResourceAccount.email_pwd;
             }
             return View();
         }
@@ -222,5 +222,6 @@ namespace projet_asp.Controllers
             }
             base.Dispose(disposing);
         }
+     
     }
 }
