@@ -3,65 +3,59 @@
 @{
     ViewBag.Title = "Create";
 }
-
-<h2>Create</h2>
-
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Admin</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.Nom, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Nom, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Nom, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Prenom, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Prenom, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Prenom, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.MotDePasse, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.MotDePasse, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.MotDePasse, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Role, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Role, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
+<body style="background-image: url(../../Assets/pexels-tim-samuel-5845024.jpg); background-size: 100%;">
+    <h2>Formulaire de contact</h2>
+    <div style="text-align: right; width: 80%;">
+        <p style="color: white; font-size: 100%;">
+            Une question ? Une suggestion ? Une demande spécifique ?
+        </p>
     </div>
-}
+    <div style="text-align: right; width: 70%;">
+        <p style="color: white; font-size: 100%;">
+            Nous sommes à votre écoute !
+        </p>
+    </div>
+    <div style="text-align: right; width: 75%;">
+        <p style="color: white; font-size: 100%;">
+            Vous pouvez à tout moment nous contacter,
+        </p>
+    </div>
+    <div style="text-align: right; width: 80%;">
+        <p style="color: white; font-size: 100%;">
+            nous nous engageons à vous donner une réponse dans les 24h.
+        </p>
+    </div>
+    <form>
 
-<div>
-    @Html.ActionLink("Back to List", "Index","Directeurs")
-</div>
+        <label for="nom" style="margin-bottom: 5px; display: inline-block; width: 10%;">Nom :</label>
+        <input type="text" id="nom" name="nom" required style="background-color: transparent;"><br><br>
+
+        <label for="email" style="margin-bottom: 5px; display: inline-block; width: 10%;">Email :</label>
+        <input type="email" id="email" name="email" required style="background-color: transparent;"><br><br>
+
+        <label for="tel" style="margin-bottom: 5px; display: inline-block; width: 10%;">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" style="background-color: transparent;"><br><br>
+
+        <label for="raison">Raison du contact :</label>
+        <select id="raison" name="raison" style="background-color: transparent;">
+            <option value="information">Demande d'information</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <label for="message" style="margin-bottom: 5px; display: inline-block; width: 10%;">Message :</label>
+        <textarea id="message" name="message" required style="background-color: transparent;"></textarea><br><br>
+
+        <label for="contact-preference">Préférence de contact :</label><br>
+        <input type="radio" id="email-preference" name="contact-preference" value="email" checked>
+        <label for="email-preference">Email</label><br>
+        <input type="radio" id="tel-preference" name="contact-preference" value="tel">
+        <label for="tel-preference">Téléphone</label><br><br>
+
+        <label for="heures-ouverture">Heures d'ouverture :</label><br>
+        <p>L'école est ouverte du lundi au vendredi de 8h à 18h.</p>
+        <p>Les demandes de contact seront traitées dans un délai de 24 à 48 heures pendant les heures d'ouverture.</p><br><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+
+</body>
