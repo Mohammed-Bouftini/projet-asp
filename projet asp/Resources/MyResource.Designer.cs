@@ -70,6 +70,33 @@ namespace projet_asp.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à espace Admin.
+        /// </summary>
+        public static string espaceAdm {
+            get {
+                return ResourceManager.GetString("espaceAdm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à espace Directeur.
+        /// </summary>
+        public static string espaceDire {
+            get {
+                return ResourceManager.GetString("espaceDire", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à espace Enseignant.
+        /// </summary>
+        public static string espaceEnsg {
+            get {
+                return ResourceManager.GetString("espaceEnsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à langues.
         /// </summary>
         public static string lan {

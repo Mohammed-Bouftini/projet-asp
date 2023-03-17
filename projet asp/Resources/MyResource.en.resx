@@ -120,6 +120,15 @@
   <data name="bnj" xml:space="preserve">
     <value>Welcome</value>
   </data>
+  <data name="espaceAdm" xml:space="preserve">
+    <value>Admins Space</value>
+  </data>
+  <data name="espaceDire" xml:space="preserve">
+    <value>Director Space</value>
+  </data>
+  <data name="espaceEnsg" xml:space="preserve">
+    <value>Teachers Space</value>
+  </data>
   <data name="lan" xml:space="preserve">
     <value>language</value>
   </data>
