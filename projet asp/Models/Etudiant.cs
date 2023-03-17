@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using System.Xml.Linq;
@@ -39,6 +40,10 @@ namespace projet_asp.Models
         public string Role { get; set; }
         [Display(Name = "vld", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public bool Validé { get; set; }
+        public int? SectionId { get; set; }
+
+        [ForeignKey("SectionId")]
+        public virtual Section Section { get; set; }
         public ICollection<Note> Notes { get; set; }
     }
 }

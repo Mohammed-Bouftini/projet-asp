@@ -141,13 +141,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303141131219_Update.cs" />
-    <Compile Include="Migrations\202303141131219_Update.designer.cs">
-      <DependentUpon>202303141131219_Update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202303141225458_Update1.cs" />
-    <Compile Include="Migrations\202303141225458_Update1.designer.cs">
-      <DependentUpon>202303141225458_Update1.cs</DependentUpon>
+    <Compile Include="Migrations\202303171059210_Update.cs" />
+    <Compile Include="Migrations\202303171059210_Update.designer.cs">
+      <DependentUpon>202303171059210_Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
@@ -293,7 +289,6 @@
     <Content Include="Views\Sections\Details.cshtml" />
     <Content Include="Views\Sections\Edit.cshtml" />
     <Content Include="Views\Sections\Index.cshtml" />
-    <Content Include="Views\Admins\Create.cshtml" />
     <Content Include="Views\Admins\Delete.cshtml" />
     <Content Include="Views\Admins\Details.cshtml" />
     <Content Include="Views\Admins\Edit.cshtml" />
@@ -327,6 +322,7 @@
     <Content Include="Views\Etudiants\EditProfil.cshtml" />
     <Content Include="Views\Notes\NoteEtudiant.cshtml" />
     <Content Include="Views\Etudiants\Create.cshtml" />
+    <Content Include="Views\Admins\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -342,11 +338,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202303141131219_Update.resx">
-      <DependentUpon>202303141131219_Update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303141225458_Update1.resx">
-      <DependentUpon>202303141225458_Update1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303171059210_Update.resx">
+      <DependentUpon>202303171059210_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsResources\Account\ResourceAccount.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

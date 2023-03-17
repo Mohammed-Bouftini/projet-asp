@@ -26,6 +26,9 @@
             @Html.DisplayNameFor(model => model.MotDePasse)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Section.Groupe)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Role)
         </th>
         <th>
@@ -59,6 +62,9 @@
                 @Html.DisplayFor(modelItem => item.MotDePasse)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Section.Groupe)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Role)
             </td>
             <td>
@@ -68,7 +74,7 @@
                 @Html.ActionLink("Supprimer Acceptation", "NoDetail", new { id = item.Id }, new { @class = "btn btn-danger" })
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Edit", "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })
                 @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-info" })
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-delet" })
             </td>

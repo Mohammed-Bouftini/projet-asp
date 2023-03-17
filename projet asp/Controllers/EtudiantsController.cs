@@ -92,6 +92,7 @@ namespace projet_asp.Controllers
         {
             if (ModelState.IsValid)
             {
+                etudiant.SectionId = null;
                 db.Etudiants.Add(etudiant);
                 db.SaveChanges();
                 return RedirectToAction("ValidationCompte");

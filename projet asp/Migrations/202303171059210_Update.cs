@@ -77,13 +77,15 @@
                         Tel = c.String(nullable: false, maxLength: 10),
                         Email = c.String(nullable: false),
                         MotDePasse = c.String(nullable: false),
-                        SectionId = c.Int(nullable: false),
                         Role = c.String(),
                         Validé = c.Boolean(nullable: false),
+                        SectionId = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Sections", t => t.SectionId, cascadeDelete: true)
                 .Index(t => t.SectionId);
+                
+
             
             CreateTable(
                 "dbo.Notes",
