@@ -7,9 +7,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Etudiant.Nom)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Matiere.matiere)
         </th>
         <th>
@@ -24,9 +21,7 @@
             if (User.Identity.Name == item.Etudiant.Email)
             {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Etudiant.Nom)
-            </td>
+          
             <td>
                 @Html.DisplayFor(modelItem => item.Matiere.matiere)
             </td>
