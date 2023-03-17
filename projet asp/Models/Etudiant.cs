@@ -10,33 +10,34 @@ namespace projet_asp.Models
     public class Etudiant
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Le nom est obligatoire")]
-        [Display(Name = "Nom")]
+        [Required(ErrorMessageResourceName ="nomEr",ErrorMessageResourceType =typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [Display(Name = "nom",ResourceType =typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public string Nom { get; set; }
 
-        [Required(ErrorMessage = "Le prénom est obligatoire")]
-        [Display(Name = "Prénom")]
+        [Required(ErrorMessageResourceName = "prenomEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [Display(Name = "prenom", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public string Prenom { get; set; }
 
-        [Required(ErrorMessage = "Please Enter Adresse")]
+        [Required(ErrorMessageResourceName = "adresseEr", ErrorMessageResourceType =typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [Display(Name = "adresse", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public string Adress { get; set; }
-        [Required(ErrorMessage = "Please Enter Mobile No")]
-        [Display(Name = "Tel")]
-        [StringLength(10, ErrorMessage = "The Mobile must contains 10 characters", MinimumLength = 10)]
+        [Required(ErrorMessageResourceName = "teleEr", ErrorMessageResourceType =typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [Display(Name = "tele", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [StringLength(10, ErrorMessageResourceName = "teleErr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant), MinimumLength = 10)]
         public string Tel { get; set; }
 
-        [Required(ErrorMessage = "L'adresse e-mail est obligatoire")]
-        [EmailAddress(ErrorMessage = "L'adresse e-mail n'est pas valide")]
-        [Display(Name = "Adresse e-mail")]
+        [Required(ErrorMessageResourceName = "emailEr", ErrorMessageResourceType =typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [EmailAddress(ErrorMessageResourceName = "emailErr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
+        [Display(Name = "email", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public string Email { get; set; }
 
 
-        [Required(ErrorMessage = "Le mot de passe est obligatoire")]
+        [Required(ErrorMessageResourceName = "pwdEr", ErrorMessageResourceType =typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         [DataType(DataType.Password)]
-        [Display(Name = "Mot de passe")]
+        [Display(Name = "pwd", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public string MotDePasse { get; set; }
         public string Role { get; set; }
-
+        [Display(Name = "vld", ResourceType = typeof(Resources.ModelsResources.Etudiant.ResourceEtudiant))]
         public bool Validé { get; set; }
         public ICollection<Note> Notes { get; set; }
     }

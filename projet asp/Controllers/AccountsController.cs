@@ -72,8 +72,6 @@ namespace projet_asp.Controllers
                 {
                     FormsAuthentication.SetAuthCookie(log.Email, false);
                     return RedirectToAction("Index_No_Validé", "Etudiants");
-                    /*ViewBag.message = "Votre Compte n'est pas encore Validé";
-                    return View();*/
                 }
                     a = true;
             }
@@ -92,27 +90,6 @@ namespace projet_asp.Controllers
             }
             return View();
         }
-        /*  {
-              Account c = db.Accounts.FirstOrDefault(item => item.Email == account.Email && item.Password == account.Password);
-
-              if (c != null)
-              {
-                  FormsAuthentication.SetAuthCookie(c.Email, false);
-                  if (returnUrl != null)
-                      return Redirect(returnUrl);
-                  if (c.Email == "Dir@gmail.com")
-                      return RedirectToAction("Index", "Directeurs");
-                  else
-                      return RedirectToAction("index", "Home");
-              }
-              else
-              {
-                  ViewBag.msgerror = "Error, Username or password is incorrect!";
-                  return View();
-              }
-          }*/
-
-
         // GET: Accounts
         public ActionResult Index()
         {
@@ -222,6 +199,21 @@ namespace projet_asp.Controllers
             }
             base.Dispose(disposing);
         }
-     
+        public ActionResult CultureFr()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("fr-FR");
+            return RedirectToAction("Login");
+        }
+
+        public ActionResult CultureEn()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("en-US");
+            return RedirectToAction("Login");
+        }
+        public ActionResult CultureAr()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("ar-MA");
+            return RedirectToAction("Login");
+        }
     }
 }

@@ -117,10 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="bnj" xml:space="preserve">
-    <value>مرحباً</value>
+  <data name="adresse" xml:space="preserve">
+    <value>العنوان</value>
   </data>
-  <data name="lan" xml:space="preserve">
-    <value>اللغات</value>
+  <data name="adresseEr" xml:space="preserve">
+    <value>الرجاء إدخال العنوان</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="emailEr" xml:space="preserve">
+    <value>مطلوب عنوان البريد الإلكتروني</value>
+  </data>
+  <data name="emailErr" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني غير صالح</value>
+  </data>
+  <data name="nom" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="nomEr" xml:space="preserve">
+    <value>مطلوب اسم</value>
+  </data>
+  <data name="prenom" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="prenomEr" xml:space="preserve">
+    <value>الإسم الأول مطلوب</value>
+  </data>
+  <data name="pwd" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="pwdEr" xml:space="preserve">
+    <value>كلمة المرور مطلوبة</value>
+  </data>
+  <data name="sinp" xml:space="preserve">
+    <value>اشتراك</value>
+  </data>
+  <data name="tele" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="teleEr" xml:space="preserve">
+    <value>الرجاء إدخال رقم الهاتف المحمول</value>
+  </data>
+  <data name="teleErr" xml:space="preserve">
+    <value>يجب أن يحتوي الهاتف المحمول على 10 أحرف</value>
+  </data>
+  <data name="vld" xml:space="preserve">
+    <value>مقبول</value>
   </data>
 </root>

@@ -178,5 +178,73 @@ namespace projet_asp.Controllers
             }
             base.Dispose(disposing);
         }
-    }
+
+        public ActionResult CultureFr()
+        {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("fr-FR");
+            if (User.Identity.IsAuthenticated)
+            {
+                foreach (var item in db.Etudiants)
+                {
+
+                    if (item.Validé == false)
+                    {
+                        return RedirectToAction("Index-No-Validé");
+                    }
+                    else if (item.Validé == true)
+                    {
+                        return RedirectToAction("Index");
+                    }
+
+                }
+            }
+            return RedirectToAction("Create");
+        }
+
+                public ActionResult CultureEn()
+                {
+                    Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = new System.Globalization.CultureInfo("en-US");
+            if (User.Identity.IsAuthenticated)
+            {
+                foreach (var item in db.Etudiants)
+                {
+
+                    if (item.Validé == false)
+                    {
+                        return RedirectToAction("Index-No-Validé");
+                    }
+                    else if (item.Validé == true)
+                    {
+                        return RedirectToAction("Index");
+                    }
+
+                }
+            }
+            return RedirectToAction("Create");
+        
+          
+                }
+                public ActionResult CultureAr()
+                {
+                    Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture=Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = new System.Globalization.CultureInfo("ar-MA");
+            if (User.Identity.IsAuthenticated)
+            {
+                        foreach (var item in db.Etudiants)
+                        {
+                       
+                        if (item.Validé == false)
+                        {
+                            return RedirectToAction("Index-No-Validé");
+                        }
+                        else if (item.Validé == true)
+                        {
+                            return RedirectToAction("Index");
+                        }
+                    
+                }
+            }
+            return RedirectToAction("Create");
+        }
+            }
+
 }

@@ -174,6 +174,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceAccount.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEtudiant.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEtudiant.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEtudiant.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\MyResource.ar.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -344,6 +359,18 @@
     <EmbeddedResource Include="Resources\ModelsResources\Account\ResourceAccount.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceAccount.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEtudiant.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEtudiant.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEtudiant.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\MyResource.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

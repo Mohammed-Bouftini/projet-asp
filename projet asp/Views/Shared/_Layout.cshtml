@@ -9,7 +9,8 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-expand-lg navbar-fixed-top  bg-info border-bottom box-shadow mb-1 py-sm-4 py-2">
+    
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
@@ -77,14 +78,25 @@
 
                         }
                     }
+                    <li class="dropdown nav-item mr-lg-3">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle ">
+                            @projet_asp.Resources.MyResource.lan
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li> @Html.ActionLink("Francais", "CultureFr", "Home", new { @class = "nav-link" }) </li>
+                            <li> @Html.ActionLink("English", "CultureEn", "Home", new { @class = "nav-link" })</li>
+                            <li>@Html.ActionLink("العربية", "CultureAR", "Home", new { @class = "nav-link" })</li>
+                        </ul>
                 </ul>
             </div>
         </div>
-    </div>@RenderBody()
- 
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        </div>@RenderBody()
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>

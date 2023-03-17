@@ -61,11 +61,20 @@ namespace projet_asp.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Bienvenu.
+        ///   Recherche une chaîne localisée semblable à Bienvenue.
         /// </summary>
         public static string bnj {
             get {
                 return ResourceManager.GetString("bnj", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à langues.
+        /// </summary>
+        public static string lan {
+            get {
+                return ResourceManager.GetString("lan", resourceCulture);
             }
         }
     }
