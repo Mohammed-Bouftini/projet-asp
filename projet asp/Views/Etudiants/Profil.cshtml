@@ -4,7 +4,7 @@
     ViewBag.Title = "Profil";
 }
 
-<h2>Profil</h2>
+<h2>@projet_asp.Resources.MyResource.profil</h2>
 
 <div>
     <h4>Etudiant</h4>
@@ -69,6 +69,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "EditProfil", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index_No_Validé")
+    @Html.ActionLink(projet_asp.Resources.MyResource.edit, "EditProfil", new { id = Model.Id }) |
+    @Html.ActionLink(projet_asp.Resources.MyResource.back, "Index_No_Validé")
 </p>

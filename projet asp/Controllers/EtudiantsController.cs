@@ -182,70 +182,74 @@ namespace projet_asp.Controllers
 
         public ActionResult CultureFr()
         {
-            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("fr-FR");
-            if (User.Identity.IsAuthenticated)
-            {
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("fr-FR");
+           
                 foreach (var item in db.Etudiants)
                 {
-
-                    if (item.Validé == false)
+                if (User.Identity.IsAuthenticated)
+                {
+                    if (User.Identity.Name == item.Email == item.Validé == false)
                     {
-                        return RedirectToAction("Index-No-Validé");
+                        return RedirectToAction("Index_No_Validé", "Etudiants");
                     }
-                    else if (item.Validé == true)
+                    else if (User.Identity.Name == item.Email == item.Validé == true)
                     {
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index", "Etudiants");
                     }
 
                 }
+
             }
-            return RedirectToAction("Create");
+            return RedirectToAction( "Create", "Etudiants");
         }
 
                 public ActionResult CultureEn()
                 {
-                    Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = new System.Globalization.CultureInfo("en-US");
+                    Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = new System.Globalization.CultureInfo("en-US");
             if (User.Identity.IsAuthenticated)
             {
                 foreach (var item in db.Etudiants)
                 {
+                    if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.Identity.Name == item.Email == item.Validé == false)
+                        {
+                            return RedirectToAction("Index_No_Validé", "Etudiants");
+                        }
+                        else if (User.Identity.Name == item.Email == item.Validé == true)
+                        {
+                            return RedirectToAction("Index", "Etudiants");
+                        }
 
-                    if (item.Validé == false)
-                    {
-                        return RedirectToAction("Index-No-Validé");
-                    }
-                    else if (item.Validé == true)
-                    {
-                        return RedirectToAction("Index");
                     }
 
                 }
             }
-            return RedirectToAction("Create");
+            return RedirectToAction("Create", "Etudiants");
         
           
                 }
                 public ActionResult CultureAr()
                 {
-                    Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.MyResource.Culture=Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = new System.Globalization.CultureInfo("ar-MA");
-            if (User.Identity.IsAuthenticated)
+                    Resources.ModelsResources.Account.ResourceAccount.Culture=Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.MyResource.Culture=Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = new System.Globalization.CultureInfo("ar-MA");
+            foreach (var item in db.Etudiants)
             {
-                        foreach (var item in db.Etudiants)
-                        {
-                       
-                        if (item.Validé == false)
-                        {
-                            return RedirectToAction("Index-No-Validé");
-                        }
-                        else if (item.Validé == true)
-                        {
-                            return RedirectToAction("Index");
-                        }
-                    
+                if (User.Identity.IsAuthenticated)
+                {
+                    if (User.Identity.Name == item.Email == item.Validé == false)
+                    {
+                        return RedirectToAction("Index_No_Validé", "Etudiants");
+                    }
+                    else if (User.Identity.Name == item.Email == item.Validé == true)
+                    {
+                        return RedirectToAction("Index", "Etudiants");
+                    }
+
                 }
+
             }
-            return RedirectToAction("Create");
-        }
+            return RedirectToAction("Create", "Etudiants");
+            }
             }
 
 }

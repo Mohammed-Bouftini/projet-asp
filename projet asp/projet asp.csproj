@@ -379,6 +379,7 @@
     <EmbeddedResource Include="Resources\ModelsResources\Admin\ResourceAdmin.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceAdmin.ar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -395,6 +396,7 @@
     <EmbeddedResource Include="Resources\MyResource.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MyResource.ar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\MyResource.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -403,6 +405,7 @@
     <EmbeddedResource Include="Resources\MyResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

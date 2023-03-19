@@ -74,9 +74,9 @@
                 @Html.ActionLink("Supprimer Acceptation", "NoDetail", new { id = item.Id }, new { @class = "btn btn-danger" })
             </td>
             <td>
-                @Html.ActionLink("Edit", "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })
-                @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-info" })
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-delet" })
+                @Html.ActionLink(projet_asp.Resources.MyResource.edit, "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })
+                @Html.ActionLink(projet_asp.Resources.MyResource.details, "Details", new { id = item.Id }, new { @class = "btn btn-info" })
+                @Html.ActionLink(projet_asp.Resources.MyResource.delete, "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-delet" })
             </td>
         </tr>
     }
@@ -84,5 +84,5 @@
 
 </table>
 <div>
-    @Html.ActionLink("Back to List", "Index", "Admins", null, new { @class = "btn btn-default" })
+    @Html.ActionLink(projet_asp.Resources.MyResource.back, "Index", "Admins", null, new { @class = "btn btn-default" })
 </div>

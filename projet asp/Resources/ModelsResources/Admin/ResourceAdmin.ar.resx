@@ -139,7 +139,7 @@
     <value>الإسم الأول مطلوب</value>
   </data>
   <data name="pwd" xml:space="preserve">
-    <value>كلمة السر</value>
+    <value>كلمة المرور</value>
   </data>
   <data name="pwdEr" xml:space="preserve">
     <value>كلمة المرور مطلوبة</value>

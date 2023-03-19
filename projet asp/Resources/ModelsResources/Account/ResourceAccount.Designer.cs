@@ -61,15 +61,6 @@ namespace projet_asp.Resources.ModelsResources.Account {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à .
-        /// </summary>
-        public static string acpt {
-            get {
-                return ResourceManager.GetString("acpt", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Adresse e-mail.
         /// </summary>
         public static string email {

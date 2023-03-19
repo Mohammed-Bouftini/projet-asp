@@ -11,7 +11,7 @@
         <br />
         <p>
             <a style="background-color: aqua;">
-                @Html.ActionLink("Les Notes","NoteEtudiant","Notes", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
+                @Html.ActionLink(projet_asp.Resources.MyResource.listnote,"NoteEtudiant","Notes", null, new { @class = "btn btn-success btn-lg", @style = "background-color: transparent; font-size: 35px;" })
             </a>
         </p>
         @foreach (var item in Model)
@@ -20,7 +20,7 @@
             {
                 if (User.Identity.Name == item.Email)
                 {
-                     @Html.ActionLink("Profil", "Details", new { id = item.Id }, new { @class = "btn btn-primary", style = "position: absolute; top: 50px; left: 50px;margin-left: -15px;" })
+                     @Html.ActionLink(projet_asp.Resources.MyResource.profil, "Details", new { id = item.Id }, new { @class = "btn btn-primary", style = "position: absolute; top: 50px; left: 50px;margin-left: -15px;" })
                 }
 
             }
