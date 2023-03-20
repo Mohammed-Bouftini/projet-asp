@@ -61,6 +61,15 @@ namespace projet_asp.Resources.ModelsResources.Etudiant {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Accepter.
+        /// </summary>
+        public static string acp {
+            get {
+                return ResourceManager.GetString("acp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Adresse.
         /// </summary>
         public static string adresse {
@@ -165,6 +174,15 @@ namespace projet_asp.Resources.ModelsResources.Etudiant {
         public static string sinp {
             get {
                 return ResourceManager.GetString("sinp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Supprimer Acceptation.
+        /// </summary>
+        public static string supacp {
+            get {
+                return ResourceManager.GetString("supacp", resourceCulture);
             }
         }
         

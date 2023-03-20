@@ -401,6 +401,7 @@
     <EmbeddedResource Include="Resources\MyResource.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MyResource.en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\MyResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

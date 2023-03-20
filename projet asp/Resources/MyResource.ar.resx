@@ -150,6 +150,9 @@
   <data name="listnote" xml:space="preserve">
     <value>النقط</value>
   </data>
+  <data name="msgComptevalidé" xml:space="preserve">
+    <value>!! تم إنشاء حسابك بنجاح. يرجى انتظار التحقق من صحة حسابك من قبل مسؤولي النظام </value>
+  </data>
   <data name="profil" xml:space="preserve">
     <value>حساب تعريفي</value>
   </data>

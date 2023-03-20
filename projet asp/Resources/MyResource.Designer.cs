@@ -160,6 +160,15 @@ namespace projet_asp.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Votre compte a été créé avec succès. Veuillez attendre la validation de votre compte par les administrateurs du système !!.
+        /// </summary>
+        public static string msgComptevalidé {
+            get {
+                return ResourceManager.GetString("msgComptevalidé", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Profil.
         /// </summary>
         public static string profil {

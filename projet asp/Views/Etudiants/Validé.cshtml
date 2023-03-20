@@ -71,7 +71,7 @@
                 @Html.DisplayFor(modelItem => item.Validé)
             </td>
             <td>
-                @Html.ActionLink("Supprimer Acceptation", "NoDetail", new { id = item.Id }, new { @class = "btn btn-danger" })
+                @Html.ActionLink(projet_asp.Resources.ModelsResources.Etudiant.ResourceEtudiant.supacp, "NoDetail", new { id = item.Id }, new { @class = "btn btn-danger" })
             </td>
             <td>
                 @Html.ActionLink(projet_asp.Resources.MyResource.edit, "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })

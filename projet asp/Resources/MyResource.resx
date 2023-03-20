@@ -150,6 +150,9 @@
   <data name="listnote" xml:space="preserve">
     <value>Les Notes</value>
   </data>
+  <data name="msgComptevalidé" xml:space="preserve">
+    <value>Votre compte a été créé avec succès. Veuillez attendre la validation de votre compte par les administrateurs du système !!</value>
+  </data>
   <data name="profil" xml:space="preserve">
     <value>Profil</value>
   </data>

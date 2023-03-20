@@ -71,7 +71,7 @@
                         @Html.DisplayFor(modelItem => item.Validé)
                     </td>
                     <td>
-                        @Html.ActionLink("Accepter", "Detail", new { id = item.Id }, new { @class = "btn btn-success" })
+                        @Html.ActionLink(projet_asp.Resources.ModelsResources.Etudiant.ResourceEtudiant.acp, "Detail", new { id = item.Id }, new { @class = "btn btn-success" })
                     </td>
                     <td>
                         @Html.ActionLink(projet_asp.Resources.MyResource.edit, "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })

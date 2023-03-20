@@ -148,7 +148,10 @@
     <value>language</value>
   </data>
   <data name="listnote" xml:space="preserve">
-    <value>The notes</value>
+    <value>notes</value>
+  </data>
+  <data name="msgComptevalidé" xml:space="preserve">
+    <value>Your account has been successfully created. Please wait for the validation of your account by the system administrators!!</value>
   </data>
   <data name="profil" xml:space="preserve">
     <value>Profile</value>
