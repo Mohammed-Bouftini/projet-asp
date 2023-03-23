@@ -185,6 +185,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceAdmin.ar.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ModelsResources\Directeur\ResourceDirecteur.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceDirecteur.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Directeur\ResourceDirecteur.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceDirecteur.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Directeur\ResourceDirecteur.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceDirecteur.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEnseigant.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEnseigant.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEnseigant.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.ar.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +229,51 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceEtudiant.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Matière\ResourceMatière.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMatière.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Matière\ResourceMatière.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMatière.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Matière\ResourceMatière.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMatière.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Note\ResourceNote.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceNote.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Note\ResourceNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceNote.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Note\ResourceNote.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceNote.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Section\ResourceSection.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceSection.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Section\ResourceSection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceSection.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Section\ResourceSection.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceSection.en.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\MyResource.ar.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -381,6 +456,30 @@
       <LastGenOutput>ResourceAdmin.ar.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Directeur\ResourceDirecteur.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceDirecteur.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Directeur\ResourceDirecteur.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceDirecteur.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Directeur\ResourceDirecteur.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceDirecteur.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEnseigant.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEnseigant.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEnseigant.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceEtudiant.ar.Designer.cs</LastGenOutput>
@@ -392,6 +491,42 @@
     <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceEtudiant.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Matière\ResourceMatière.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMatière.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Matière\ResourceMatière.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMatière.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Matière\ResourceMatière.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMatière.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Note\ResourceNote.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceNote.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Note\ResourceNote.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceNote.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Note\ResourceNote.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceNote.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Section\ResourceSection.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceSection.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Section\ResourceSection.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceSection.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ModelsResources\Section\ResourceSection.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceSection.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\MyResource.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -409,13 +544,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\ModelsResources\Directeur\" />
-    <Folder Include="Resources\ModelsResources\Enseignant\" />
-    <Folder Include="Resources\ModelsResources\Matière\" />
-    <Folder Include="Resources\ModelsResources\Note\" />
-    <Folder Include="Resources\ModelsResources\Section\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
