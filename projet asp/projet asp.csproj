@@ -409,6 +409,13 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\ModelsResources\Directeur\" />
+    <Folder Include="Resources\ModelsResources\Enseignant\" />
+    <Folder Include="Resources\ModelsResources\Matière\" />
+    <Folder Include="Resources\ModelsResources\Note\" />
+    <Folder Include="Resources\ModelsResources\Section\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
