@@ -59,5 +59,68 @@ namespace projet_asp.Resources.ModelsResources.Note {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à etudiant.
+        /// </summary>
+        public static string etudiant {
+            get {
+                return ResourceManager.GetString("etudiant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à etudiant est obligatoire.
+        /// </summary>
+        public static string etudiantEr {
+            get {
+                return ResourceManager.GetString("etudiantEr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à matiere.
+        /// </summary>
+        public static string matiere {
+            get {
+                return ResourceManager.GetString("matiere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à matiere est obligatoire.
+        /// </summary>
+        public static string matiereEr {
+            get {
+                return ResourceManager.GetString("matiereEr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à moyenne.
+        /// </summary>
+        public static string moyenne {
+            get {
+                return ResourceManager.GetString("moyenne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à la note est obligatoire.
+        /// </summary>
+        public static string moyenneEr {
+            get {
+                return ResourceManager.GetString("moyenneEr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à La note doit être comprise entre 0 et 20.
+        /// </summary>
+        public static string moyenneErr {
+            get {
+                return ResourceManager.GetString("moyenneErr", resourceCulture);
+            }
+        }
     }
 }
