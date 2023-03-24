@@ -59,5 +59,23 @@ namespace projet_asp.Resources.ModelsResources.Matière {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à enseignant.
+        /// </summary>
+        public static string enseignant {
+            get {
+                return ResourceManager.GetString("enseignant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à matiere.
+        /// </summary>
+        public static string matiere {
+            get {
+                return ResourceManager.GetString("matiere", resourceCulture);
+            }
+        }
     }
 }
