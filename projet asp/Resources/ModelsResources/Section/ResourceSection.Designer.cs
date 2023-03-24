@@ -59,5 +59,14 @@ namespace projet_asp.Resources.ModelsResources.Section {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à groupe.
+        /// </summary>
+        public static string groupe {
+            get {
+                return ResourceManager.GetString("groupe", resourceCulture);
+            }
+        }
     }
 }
