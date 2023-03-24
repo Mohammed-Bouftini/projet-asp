@@ -59,5 +59,86 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à بريد إلكتروني.
+        /// </summary>
+        public static string email {
+            get {
+                return ResourceManager.GetString("email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à بريد إلكتروني مطلوب.
+        /// </summary>
+        public static string emailEr {
+            get {
+                return ResourceManager.GetString("emailEr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à عنوان البريد الإلكتروني غير صالح.
+        /// </summary>
+        public static string emailErr {
+            get {
+                return ResourceManager.GetString("emailErr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à اسم.
+        /// </summary>
+        public static string nom {
+            get {
+                return ResourceManager.GetString("nom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à الإسم  مطلوب.
+        /// </summary>
+        public static string nomEr {
+            get {
+                return ResourceManager.GetString("nomEr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à الاسم الأول.
+        /// </summary>
+        public static string prenom {
+            get {
+                return ResourceManager.GetString("prenom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à الإسم الأول مطلوب.
+        /// </summary>
+        public static string prenomEr {
+            get {
+                return ResourceManager.GetString("prenomEr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à كلمة السر.
+        /// </summary>
+        public static string pwd {
+            get {
+                return ResourceManager.GetString("pwd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à كلمة السر مطلوب.
+        /// </summary>
+        public static string pwdEr {
+            get {
+                return ResourceManager.GetString("pwdEr", resourceCulture);
+            }
+        }
     }
 }
