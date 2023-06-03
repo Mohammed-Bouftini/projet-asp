@@ -61,7 +61,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à بريد إلكتروني.
+        ///   Recherche une chaîne localisée semblable à L&apos;adresse e-mail.
         /// </summary>
         public static string email {
             get {
@@ -70,7 +70,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à بريد إلكتروني مطلوب.
+        ///   Recherche une chaîne localisée semblable à L&apos;adresse e-mail est obligatoire.
         /// </summary>
         public static string emailEr {
             get {
@@ -79,7 +79,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à عنوان البريد الإلكتروني غير صالح.
+        ///   Recherche une chaîne localisée semblable à L&apos;adresse e-mail n&apos;est pas valide.
         /// </summary>
         public static string emailErr {
             get {
@@ -88,7 +88,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à اسم.
+        ///   Recherche une chaîne localisée semblable à nom.
         /// </summary>
         public static string nom {
             get {
@@ -97,7 +97,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à الإسم  مطلوب.
+        ///   Recherche une chaîne localisée semblable à Le nom est obligatoire.
         /// </summary>
         public static string nomEr {
             get {
@@ -106,7 +106,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à الاسم الأول.
+        ///   Recherche une chaîne localisée semblable à prenom.
         /// </summary>
         public static string prenom {
             get {
@@ -115,7 +115,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à الإسم الأول مطلوب.
+        ///   Recherche une chaîne localisée semblable à Le prénom est obligatoire.
         /// </summary>
         public static string prenomEr {
             get {
@@ -124,7 +124,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à كلمة السر.
+        ///   Recherche une chaîne localisée semblable à mot de passe.
         /// </summary>
         public static string pwd {
             get {
@@ -133,7 +133,7 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à كلمة السر مطلوب.
+        ///   Recherche une chaîne localisée semblable à Le mot de passe est obligatoire.
         /// </summary>
         public static string pwdEr {
             get {

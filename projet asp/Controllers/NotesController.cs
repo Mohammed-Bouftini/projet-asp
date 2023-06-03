@@ -46,9 +46,21 @@ namespace projet_asp.Controllers
         public ActionResult Create()
         {
             ViewBag.EtudiantId = new SelectList(db.Etudiants, "Id", "Nom");
-            ViewBag.MatiereId = new SelectList(db.Matière, "Id", "matiere");
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var professor = db.Enseignants.FirstOrDefault(item => item.Email == User.Identity.Name);
+
+                if (professor != null)
+                {
+                    ViewBag.EtudiantId = new SelectList(db.Etudiants.Where(e => e.Validé), "Id", "Nom");
+                    ViewBag.MatiereId = new SelectList(db.Matière.Where(m => m.EnseignantId == professor.Id), "Id", "matiere");
+                }
+            }
+
             return View();
         }
+
 
         // POST: Notes/Create
         // Afin de déjouer les attaques par survalidation, activez les propriétés spécifiques auxquelles vous voulez établir une liaison. Pour 
@@ -64,7 +76,8 @@ namespace projet_asp.Controllers
                 return RedirectToAction("Index","Enseignants");
             }
 
-            ViewBag.EtudiantId = new SelectList(db.Etudiants, "Id", "Nom", note.EtudiantId);
+            
+            ViewBag.EtudiantId = new SelectList(db.Etudiants.Where(e => e.Validé), "Id", "Nom", note.EtudiantId);
             ViewBag.MatiereId = new SelectList(db.Matière, "Id", "matiere", note.MatiereId);
             return View(note);
         }

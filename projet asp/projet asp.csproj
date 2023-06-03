@@ -145,6 +145,10 @@
     <Compile Include="Migrations\202303171059210_Update.designer.cs">
       <DependentUpon>202303171059210_Update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306032257001_upd1.cs" />
+    <Compile Include="Migrations\202306032257001_upd1.designer.cs">
+      <DependentUpon>202306032257001_upd1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -200,15 +204,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceDirecteur.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.ar.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceEnseigant.ar.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceEnseigant.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceEnseigant.ar.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.en.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -308,6 +312,7 @@
     <Content Include="Assets\pexels-karolina-grabowska-7681200.jpg" />
     <Content Include="Assets\pexels-karolina-grabowska-7681419.jpg" />
     <Content Include="Assets\pexels-pixabay-159740.jpg" />
+    <Content Include="Assets\School-image-school-36812026-3888-2592.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -431,6 +436,9 @@
     <EmbeddedResource Include="Migrations\202303171059210_Update.resx">
       <DependentUpon>202303171059210_Update.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306032257001_upd1.resx">
+      <DependentUpon>202306032257001_upd1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsResources\Account\ResourceAccount.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceAccount.ar.Designer.cs</LastGenOutput>
@@ -468,17 +476,17 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceDirecteur.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.ar.resx">
+    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceEnseigant.ar.Designer.cs</LastGenOutput>
+      <LastGenOutput>ResourceEnseigant.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceEnseigant.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.resx">
+    <EmbeddedResource Include="Resources\ModelsResources\Enseignant\ResourceEnseigant.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceEnseigant.Designer.cs</LastGenOutput>
+      <LastGenOutput>ResourceEnseigant.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ModelsResources\Etudiant\ResourceEtudiant.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

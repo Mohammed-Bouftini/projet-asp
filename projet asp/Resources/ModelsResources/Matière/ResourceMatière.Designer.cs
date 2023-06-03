@@ -63,9 +63,9 @@ namespace projet_asp.Resources.ModelsResources.Matière {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à enseignant.
         /// </summary>
-        public static string enseignant {
+        public static string EnseignantId {
             get {
-                return ResourceManager.GetString("enseignant", resourceCulture);
+                return ResourceManager.GetString("EnseignantId", resourceCulture);
             }
         }
         
@@ -75,6 +75,15 @@ namespace projet_asp.Resources.ModelsResources.Matière {
         public static string matiere {
             get {
                 return ResourceManager.GetString("matiere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à -- Select Enseignant --.
+        /// </summary>
+        public static string SelectEnseignant {
+            get {
+                return ResourceManager.GetString("SelectEnseignant", resourceCulture);
             }
         }
     }

@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AjouterMatière" xml:space="preserve">
+    <value>Ajouter Matière</value>
+  </data>
+  <data name="AjouterSection" xml:space="preserve">
+    <value>Ajouter Section</value>
+  </data>
+  <data name="CréerAdministratif" xml:space="preserve">
+    <value>Créer Administratif</value>
+  </data>
+  <data name="CréerEnseignant" xml:space="preserve">
+    <value>Créer Enseignant</value>
+  </data>
   <data name="email" xml:space="preserve">
     <value>Adresse e-mail</value>
   </data>
@@ -125,6 +137,12 @@
   </data>
   <data name="emailErr" xml:space="preserve">
     <value>L'adresse e-mail n'est pas valide</value>
+  </data>
+  <data name="ListeAdministratif" xml:space="preserve">
+    <value>Liste Administratif</value>
+  </data>
+  <data name="ListeEnseignant" xml:space="preserve">
+    <value>Liste Enseignant</value>
   </data>
   <data name="nom" xml:space="preserve">
     <value>Nom</value>

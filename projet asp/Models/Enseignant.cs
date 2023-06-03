@@ -10,22 +10,22 @@ namespace projet_asp.Models
     public class Enseignant
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Le nom est obligatoire")]
-        [Display(Name = "Nom")]
+        [Required(ErrorMessageResourceName = "nomEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
+        [Display(Name = "nom", ResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
         public string Nom { get; set; }
 
-        [Required(ErrorMessage = "Le prénom est obligatoire")]
-        [Display(Name = "Prénom")]
+        [Required(ErrorMessageResourceName = "prenomEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
+        [Display(Name = "prenom", ResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
         public string Prenom { get; set; }
 
-        [Required(ErrorMessage = "L'adresse e-mail est obligatoire")]
-        [EmailAddress(ErrorMessage = "L'adresse e-mail n'est pas valide")]
-        [Display(Name = "Adresse e-mail")]
+        [Required(ErrorMessageResourceName = "emailEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
+        [EmailAddress(ErrorMessageResourceName = "emailErr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
+        [Display(Name = "email", ResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Le mot de passe est obligatoire")]
+        [Required(ErrorMessageResourceName = "pwdEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
         [DataType(DataType.Password)]
-        [Display(Name = "Mot de passe")]
+        [Display(Name = "pwd", ResourceType = typeof(Resources.ModelsResources.Enseignant.ResourceEnseigant))]
         public string MotDePasse { get; set; }
         public string Role { get; set; }
     }

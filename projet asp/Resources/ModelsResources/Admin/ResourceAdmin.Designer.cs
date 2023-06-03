@@ -61,7 +61,7 @@ namespace projet_asp.Resources.ModelsResources.Admin {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à L&apos;adresse e-mail n&apos;est pas valide.
+        ///   Recherche une chaîne localisée semblable à L&apos;adresse e-mail .
         /// </summary>
         public static string email {
             get {

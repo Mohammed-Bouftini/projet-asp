@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="email" xml:space="preserve">
-    <value>L'adresse e-mail n'est pas valide</value>
+    <value>L'adresse e-mail </value>
   </data>
   <data name="emailEr" xml:space="preserve">
     <value>L'adresse e-mail est obligatoire</value>

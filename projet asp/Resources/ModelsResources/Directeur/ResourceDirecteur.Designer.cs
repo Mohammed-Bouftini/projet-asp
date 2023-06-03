@@ -61,6 +61,42 @@ namespace projet_asp.Resources.ModelsResources.Directeur {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ajouter Matière.
+        /// </summary>
+        public static string AjouterMatière {
+            get {
+                return ResourceManager.GetString("AjouterMatière", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ajouter Section.
+        /// </summary>
+        public static string AjouterSection {
+            get {
+                return ResourceManager.GetString("AjouterSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Créer Administratif.
+        /// </summary>
+        public static string CréerAdministratif {
+            get {
+                return ResourceManager.GetString("CréerAdministratif", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Créer Enseignant.
+        /// </summary>
+        public static string CréerEnseignant {
+            get {
+                return ResourceManager.GetString("CréerEnseignant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Adresse e-mail.
         /// </summary>
         public static string email {
@@ -84,6 +120,24 @@ namespace projet_asp.Resources.ModelsResources.Directeur {
         public static string emailErr {
             get {
                 return ResourceManager.GetString("emailErr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Liste Administratif.
+        /// </summary>
+        public static string ListeAdministratif {
+            get {
+                return ResourceManager.GetString("ListeAdministratif", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Liste Enseignant.
+        /// </summary>
+        public static string ListeEnseignant {
+            get {
+                return ResourceManager.GetString("ListeEnseignant", resourceCulture);
             }
         }
         

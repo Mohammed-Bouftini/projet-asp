@@ -11,21 +11,21 @@ namespace projet_asp.Models
     public class Note
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "La note est obligatoire")]
-        [Range(0, 20, ErrorMessage = "La note doit être comprise entre 0 et 20")]
-        [Display(Name = "Note")]
+        [Required(ErrorMessageResourceName = "moyenneEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
+        [Range(0, 20,ErrorMessageResourceName = "moyenneErr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
+        [Display(Name = "moyenne", ResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
         public double moyenne { get; set; }
 
-        [Required(ErrorMessage = "La matière est obligatoire")]
-        [Display(Name = "Matière")]
+        [Required(ErrorMessageResourceName = "matiereEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
+        [Display(Name = "matiere", ResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
         public int MatiereId { get; set; }
 
         [ForeignKey("MatiereId")]
         public virtual Matière Matiere { get; set; }
 
 
-        [Required(ErrorMessage = "Étudiant est obligatoire")]
-        [Display(Name = "ÉtudiantId")]
+        [Required(ErrorMessageResourceName = "etudiantEr", ErrorMessageResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
+        [Display(Name = "etudiant", ResourceType = typeof(Resources.ModelsResources.Note.ResourceNote))]
         public int EtudiantId { get; set; }
 
         [ForeignKey("EtudiantId")]

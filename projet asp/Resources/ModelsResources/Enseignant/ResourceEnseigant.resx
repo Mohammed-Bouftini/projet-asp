@@ -118,30 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="email" xml:space="preserve">
-    <value>بريد إلكتروني</value>
+    <value>L'adresse e-mail</value>
   </data>
   <data name="emailEr" xml:space="preserve">
-    <value>بريد إلكتروني مطلوب</value>
+    <value>L'adresse e-mail est obligatoire</value>
   </data>
   <data name="emailErr" xml:space="preserve">
-    <value>عنوان البريد الإلكتروني غير صالح</value>
+    <value>L'adresse e-mail n'est pas valide</value>
   </data>
   <data name="nom" xml:space="preserve">
-    <value>اسم</value>
+    <value>nom</value>
   </data>
   <data name="nomEr" xml:space="preserve">
-    <value>الإسم  مطلوب</value>
+    <value>Le nom est obligatoire</value>
   </data>
   <data name="prenom" xml:space="preserve">
-    <value>الاسم الأول</value>
+    <value>prenom</value>
   </data>
   <data name="prenomEr" xml:space="preserve">
-    <value>الإسم الأول مطلوب</value>
+    <value>Le prénom est obligatoire</value>
   </data>
   <data name="pwd" xml:space="preserve">
-    <value>كلمة السر</value>
+    <value>mot de passe</value>
   </data>
   <data name="pwdEr" xml:space="preserve">
-    <value>كلمة السر مطلوب</value>
+    <value>Le mot de passe est obligatoire</value>
   </data>
 </root>

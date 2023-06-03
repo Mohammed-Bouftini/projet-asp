@@ -37,6 +37,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink(projet_asp.Resources.MyResource.edit, "Edit", new { id = Model.Id }) |
-    @Html.ActionLink(projet_asp.Resources.MyResource.back, "Index")
+    @Html.ActionLink(projet_asp.Resources.MyResource.edit, "Edit", new { id = Model.Id }, null, new { @class = "btn btn-default" }) 
+    @Html.ActionLink(projet_asp.Resources.MyResource.back, "Index", null, new { @class = "btn btn-default" })
 </p>
