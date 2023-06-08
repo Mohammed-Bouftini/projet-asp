@@ -61,7 +61,7 @@ namespace projet_asp.Resources.ModelsResources.Matière {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à enseignant.
+        ///   Recherche une chaîne localisée semblable à Enseignant.
         /// </summary>
         public static string EnseignantId {
             get {
@@ -70,7 +70,7 @@ namespace projet_asp.Resources.ModelsResources.Matière {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à matiere.
+        ///   Recherche une chaîne localisée semblable à Matiere.
         /// </summary>
         public static string matiere {
             get {
@@ -79,7 +79,7 @@ namespace projet_asp.Resources.ModelsResources.Matière {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à -- Select Enseignant --.
+        ///   Recherche une chaîne localisée semblable à -- Sélectionnez Enseignant --.
         /// </summary>
         public static string SelectEnseignant {
             get {

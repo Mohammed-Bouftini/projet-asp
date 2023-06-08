@@ -126,11 +126,17 @@
   <data name="emailErr" xml:space="preserve">
     <value>عنوان البريد الإلكتروني غير صالح</value>
   </data>
+  <data name="EtudiantsValidés" xml:space="preserve">
+    <value>الطلاب المقبولين</value>
+  </data>
   <data name="nom" xml:space="preserve">
     <value>اسم</value>
   </data>
   <data name="nomErr" xml:space="preserve">
     <value>مطلوب اسم</value>
+  </data>
+  <data name="NouveausEtudiant" xml:space="preserve">
+    <value>طلاب جدد</value>
   </data>
   <data name="prenom" xml:space="preserve">
     <value>الاسم الأول</value>

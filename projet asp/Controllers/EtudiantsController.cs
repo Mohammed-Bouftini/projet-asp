@@ -21,6 +21,23 @@ namespace projet_asp.Controllers
         {
             return View(db.Etudiants.ToList());
         }
+        public ActionResult Recher(string searchQuery)
+        {
+            var etudiants = db.Etudiants
+                .Where(e => e.Nom.Contains(searchQuery))
+                .ToList();
+
+            return View("Validé", etudiants);
+        }
+        public ActionResult Rechercher(string searchQuery)
+        {
+            var etudiants = db.Etudiants
+                .Where(e => e.Nom.Contains(searchQuery))
+                .ToList();
+
+            return View("No_Validé", etudiants);
+        }
+
         public ActionResult No_Validé()
         {
             return View(db.Etudiants.ToList());
@@ -113,6 +130,16 @@ namespace projet_asp.Controllers
             }
             return View(etudiant);
         }
+        public ActionResult EditProfil([Bind(Include = "Id,Nom,Prenom,Adress,Tel,Email,MotDePasse,Role,Validé")] Etudiant etudiant)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(etudiant).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(etudiant);
+        }
 
         // GET: Etudiants/Edit/5
         public ActionResult Edit(int? id)
@@ -144,7 +171,19 @@ namespace projet_asp.Controllers
             }
             return View(etudiant);
         }
-
+        public ActionResult Dlt(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Etudiant etudiant = db.Etudiants.Find(id);
+            if (etudiant == null)
+            {
+                return HttpNotFound();
+            }
+            return View(etudiant);
+        }
         // GET: Etudiants/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -168,9 +207,17 @@ namespace projet_asp.Controllers
             Etudiant etudiant = db.Etudiants.Find(id);
             db.Etudiants.Remove(etudiant);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("No_Validé");
         }
-
+        [HttpPost, ActionName("Dlt")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DltConfirmed(int id)
+        {
+            Etudiant etudiant = db.Etudiants.Find(id);
+            db.Etudiants.Remove(etudiant);
+            db.SaveChanges();
+            return RedirectToAction("Validé");
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

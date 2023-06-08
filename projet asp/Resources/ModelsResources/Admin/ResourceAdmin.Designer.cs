@@ -88,6 +88,15 @@ namespace projet_asp.Resources.ModelsResources.Admin {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Étudiants acceptés.
+        /// </summary>
+        public static string EtudiantsValidés {
+            get {
+                return ResourceManager.GetString("EtudiantsValidés", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Nom.
         /// </summary>
         public static string nom {
@@ -102,6 +111,15 @@ namespace projet_asp.Resources.ModelsResources.Admin {
         public static string nomErr {
             get {
                 return ResourceManager.GetString("nomErr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Nouveaux Étudiant.
+        /// </summary>
+        public static string NouveausEtudiant {
+            get {
+                return ResourceManager.GetString("NouveausEtudiant", resourceCulture);
             }
         }
         

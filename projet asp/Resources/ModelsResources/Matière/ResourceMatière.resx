@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="EnseignantId" xml:space="preserve">
-    <value>enseignant</value>
+    <value>Enseignant</value>
   </data>
   <data name="matiere" xml:space="preserve">
-    <value>matiere</value>
+    <value>Matiere</value>
   </data>
   <data name="SelectEnseignant" xml:space="preserve">
-    <value>-- Select Enseignant --</value>
+    <value>-- Sélectionnez Enseignant --</value>
   </data>
 </root>

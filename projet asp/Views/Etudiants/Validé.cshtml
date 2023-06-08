@@ -4,7 +4,14 @@
 }
 
 <h2>Validé</h2>
-
+@using (Html.BeginForm("Recher", "Etudiants", FormMethod.Get))
+{
+    <p>
+        Nom :
+        <input type="text" name="searchQuery" placeholder="Rechercher" />
+        <input type="submit" value="Rechercher"   />
+    </p>
+}
 <table class="table table-bordered table-hover table-sm" size="xs">
     <tr>
         <th>
@@ -36,50 +43,50 @@
         </th>
         <th></th>
     </tr>
-    
-    
+
+
     @foreach (var item in Model)
     {
-        if(item.Validé==true)
-        { 
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Prenom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Adress)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MotDePasse)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Section.Groupe)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Role)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Validé)
-            </td>
-            <td>
-                @Html.ActionLink(projet_asp.Resources.ModelsResources.Etudiant.ResourceEtudiant.supacp, "NoDetail", new { id = item.Id }, new { @class = "btn btn-danger" })
-            </td>
-            <td>
-                @Html.ActionLink(projet_asp.Resources.MyResource.edit, "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })
-                @Html.ActionLink(projet_asp.Resources.MyResource.details, "Details", new { id = item.Id }, new { @class = "btn btn-info" })
-                @Html.ActionLink(projet_asp.Resources.MyResource.delete, "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-delet" })
-            </td>
-        </tr>
-    }
+        if (item.Validé == true)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prenom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MotDePasse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Section.Groupe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Validé)
+                </td>
+                <td>
+                    @Html.ActionLink(projet_asp.Resources.ModelsResources.Etudiant.ResourceEtudiant.supacp, "NoDetail", new { id = item.Id }, new { @class = "btn btn-danger" })
+                </td>
+                <td>
+                    @Html.ActionLink(projet_asp.Resources.MyResource.edit, "EditAdmin", new { id = item.Id }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink(projet_asp.Resources.MyResource.details, "Details", new { id = item.Id }, new { @class = "btn btn-info" })
+                    @Html.ActionLink(projet_asp.Resources.MyResource.delete, "Dlt", new { id = item.Id }, new { @class = "btn btn-danger btn-delet" })
+                </td>
+            </tr>
+        }
     }
 
 </table>

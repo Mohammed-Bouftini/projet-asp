@@ -138,4 +138,10 @@
   <data name="moyenneErr" xml:space="preserve">
     <value>يجب أن تكون الملاحظة بين 0 و 20 بوصة</value>
   </data>
+  <data name="SelectEtudiant" xml:space="preserve">
+    <value>- اختر الطالب -</value>
+  </data>
+  <data name="SelectMatiere" xml:space="preserve">
+    <value>- اختر المادة -</value>
+  </data>
 </root>

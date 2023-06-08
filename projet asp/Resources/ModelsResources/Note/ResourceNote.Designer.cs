@@ -61,7 +61,7 @@ namespace projet_asp.Resources.ModelsResources.Note {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à etudiant.
+        ///   Recherche une chaîne localisée semblable à Etudiant.
         /// </summary>
         public static string etudiant {
             get {
@@ -70,7 +70,7 @@ namespace projet_asp.Resources.ModelsResources.Note {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à etudiant est obligatoire.
+        ///   Recherche une chaîne localisée semblable à Etudiant est obligatoire.
         /// </summary>
         public static string etudiantEr {
             get {
@@ -79,7 +79,7 @@ namespace projet_asp.Resources.ModelsResources.Note {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à matiere.
+        ///   Recherche une chaîne localisée semblable à Matiere.
         /// </summary>
         public static string matiere {
             get {
@@ -88,7 +88,7 @@ namespace projet_asp.Resources.ModelsResources.Note {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à matiere est obligatoire.
+        ///   Recherche une chaîne localisée semblable à Matiere est obligatoire.
         /// </summary>
         public static string matiereEr {
             get {
@@ -97,7 +97,7 @@ namespace projet_asp.Resources.ModelsResources.Note {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à moyenne.
+        ///   Recherche une chaîne localisée semblable à Moyenne.
         /// </summary>
         public static string moyenne {
             get {
@@ -106,7 +106,7 @@ namespace projet_asp.Resources.ModelsResources.Note {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à la note est obligatoire.
+        ///   Recherche une chaîne localisée semblable à La note est obligatoire.
         /// </summary>
         public static string moyenneEr {
             get {
@@ -120,6 +120,24 @@ namespace projet_asp.Resources.ModelsResources.Note {
         public static string moyenneErr {
             get {
                 return ResourceManager.GetString("moyenneErr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à -- Sélectionnez Étudiant --.
+        /// </summary>
+        public static string SelectEtudiant {
+            get {
+                return ResourceManager.GetString("SelectEtudiant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à -- Sélectionnez Matière --.
+        /// </summary>
+        public static string SelectMatiere {
+            get {
+                return ResourceManager.GetString("SelectMatiere", resourceCulture);
             }
         }
     }

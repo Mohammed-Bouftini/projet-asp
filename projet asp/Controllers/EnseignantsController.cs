@@ -130,18 +130,18 @@ namespace projet_asp.Controllers
         }
         public ActionResult CultureFr()
         {
-            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("fr-FR");
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = Resources.ModelsResources.Note.ResourceNote.Culture = Resources.ModelsResources.Matière.ResourceMatière.Culture = Resources.ModelsResources.Section.ResourceSection.Culture = Resources.ModelsResources.Enseignant.ResourceEnseigant.Culture =new System.Globalization.CultureInfo("fr-FR");
             return RedirectToAction("Index");
         }
 
         public ActionResult CultureEn()
         {
-            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("en-US");
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = Resources.ModelsResources.Note.ResourceNote.Culture = Resources.ModelsResources.Matière.ResourceMatière.Culture = Resources.ModelsResources.Section.ResourceSection.Culture = Resources.ModelsResources.Enseignant.ResourceEnseigant.Culture = new System.Globalization.CultureInfo("en-US");
             return RedirectToAction("Index");
         }
         public ActionResult CultureAr()
         {
-            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = new System.Globalization.CultureInfo("ar-MA");
+            Resources.ModelsResources.Account.ResourceAccount.Culture = Resources.ModelsResources.Admin.ResourceAdmin.Culture = Resources.ModelsResources.Etudiant.ResourceEtudiant.Culture = Resources.MyResource.Culture = Resources.ModelsResources.Note.ResourceNote.Culture = Resources.ModelsResources.Matière.ResourceMatière.Culture = Resources.ModelsResources.Section.ResourceSection.Culture = Resources.ModelsResources.Enseignant.ResourceEnseigant.Culture = new System.Globalization.CultureInfo("ar-MA");
             return RedirectToAction("Index");
         }
     }

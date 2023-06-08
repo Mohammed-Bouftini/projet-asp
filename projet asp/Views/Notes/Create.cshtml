@@ -26,17 +26,17 @@
         @if (User.Identity.IsAuthenticated)
         {
             <div class="form-group">
-                @Html.LabelFor(model => model.MatiereId, "Matiere", htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.LabelFor(model => model.MatiereId, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.MatiereId, (SelectList)ViewBag.MatiereList, "-- Select Matiere --", new { @class = "form-control" })
+                    @Html.DropDownListFor(model => model.MatiereId, (SelectList)ViewBag.MatiereList, projet_asp.Resources.ModelsResources.Note.ResourceNote.SelectMatiere, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.MatiereId, "", new { @class = "text-danger" })
                 </div>
             </div>
         }
             <div class="form-group">
-                @Html.LabelFor(model => model.EtudiantId, "Etudiant", htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.LabelFor(model => model.EtudiantId, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.EtudiantId, (SelectList)ViewBag.EtudiantList, "-- Select Etudiant --", new { @class = "form-control" })
+                    @Html.DropDownListFor(model => model.EtudiantId, (SelectList)ViewBag.EtudiantList, projet_asp.Resources.ModelsResources.Note.ResourceNote.SelectEtudiant, new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.EtudiantId, "", new { @class = "text-danger" })
                 </div>
             </div>

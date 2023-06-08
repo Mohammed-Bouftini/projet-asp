@@ -126,11 +126,17 @@
   <data name="emailErr" xml:space="preserve">
     <value>L'adresse e-mail n'est pas valide</value>
   </data>
+  <data name="EtudiantsValidés" xml:space="preserve">
+    <value>Étudiants acceptés</value>
+  </data>
   <data name="nom" xml:space="preserve">
     <value>Nom</value>
   </data>
   <data name="nomErr" xml:space="preserve">
     <value>Le nom est obligatoire</value>
+  </data>
+  <data name="NouveausEtudiant" xml:space="preserve">
+    <value>Nouveaux Étudiant</value>
   </data>
   <data name="prenom" xml:space="preserve">
     <value>Prénom</value>

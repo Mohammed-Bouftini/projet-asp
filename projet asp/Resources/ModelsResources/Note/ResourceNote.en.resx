@@ -138,4 +138,10 @@
   <data name="moyenneErr" xml:space="preserve">
     <value>The score must be between 0 and 20</value>
   </data>
+  <data name="SelectEtudiant" xml:space="preserve">
+    <value>-- Select Student --</value>
+  </data>
+  <data name="SelectMatiere" xml:space="preserve">
+    <value>-- Select Material --</value>
+  </data>
 </root>

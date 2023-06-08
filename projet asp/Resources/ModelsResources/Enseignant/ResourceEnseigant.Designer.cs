@@ -61,6 +61,15 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ajouter les points.
+        /// </summary>
+        public static string AjouterNotes {
+            get {
+                return ResourceManager.GetString("AjouterNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à L&apos;adresse e-mail.
         /// </summary>
         public static string email {
@@ -84,6 +93,15 @@ namespace projet_asp.Resources.ModelsResources.Enseignant {
         public static string emailErr {
             get {
                 return ResourceManager.GetString("emailErr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à liste de points.
+        /// </summary>
+        public static string ListeNotes {
+            get {
+                return ResourceManager.GetString("ListeNotes", resourceCulture);
             }
         }
         

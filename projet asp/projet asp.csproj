@@ -418,6 +418,7 @@
     <Content Include="Views\Notes\NoteEtudiant.cshtml" />
     <Content Include="Views\Etudiants\Create.cshtml" />
     <Content Include="Views\Admins\Create.cshtml" />
+    <Content Include="Views\Etudiants\Dlt.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
